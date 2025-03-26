@@ -1,0 +1,15 @@
+segundos = int(input("Digite o valor em segundos: "))
+
+dias = segundos // (24 * 3600)
+horas = (segundos % (24 * 3600)) // 3600
+minutos = (segundos % 3600) // 60
+
+print(f"{dias} dias, {horas} horas, {minutos} minutos")
+
+valor = float(input("Digite o valor total das mercadorias: R$"))
+
+if valor > 500:
+    imposto = (valor - 500) * 0.50
+    print(f"Imposto a ser pago: R${imposto:.2f}")
+else:
+    print("Não há imposto.")
